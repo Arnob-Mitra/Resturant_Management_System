@@ -1,0 +1,19 @@
+@use "../../styles/colors";
+
+#Resturant_Food_card{
+    //margin-top: 10vh;
+    width: 224px;
+    height: 298.67px;
+    left: 1.67px;
+    top: 199.8px;
+}
+
+#FoodCart__button{
+    margin: auto !important;
+	margin-top: 1rem !important;
+	font-size: large;
+	background-color: colors.$mid-blue;
+	&:hover {
+		transform: scale(1.1);
+}
+}
