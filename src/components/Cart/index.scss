@@ -1,3 +1,14 @@
+
+/*.card{
+    width: 30%;
+    border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    transform: scale(.8);
+    transition: all .3s ;
+    margin-bottom: 50px;
+
+}*/
 .main_content{
     @extend.dflex;
     position: relative;
@@ -9,57 +20,13 @@
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-.card{
-    width: 30%;
-    border-radius: 15px;
-    flex-direction: column;
-    position: relative;
-    transform: scale(.8);
-    transition: all .3s ;
-    margin-bottom: 50px;
-
-}
 .dflex{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card_img{
-    margin-top: -5vw;
-}
 
-img{
-    width: 200px;
-}
-
-.card_header{
-    @extend .dflex;
-    flex-direction: column;
-    color: white;
-    margin: 25px 0;
-}
-
-h2{
-    font-size:30px;
-}
-p{
-    font-size: 14px;
-    text-align: center;
-    color:rgba($color: #3a0505, $alpha: 1.0);
-    margin: 8px 0;
-} 
-
-.price{
-    font-size: 20px;
-    color: rgb(4, 4, 71);
-}
-span{
-    font-size: 15px;
-    display: inline-block;
-    vertical-align: top;
-}
 
 #FoodCart__button{
 	margin: 1px !important;
@@ -71,3 +38,9 @@ span{
 
     }
 }
+
+
+
+
+
+

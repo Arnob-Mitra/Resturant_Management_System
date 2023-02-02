@@ -8,28 +8,31 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './index.scss';
 
+
+
 const Cart = () => {
     console.log(product_card);
     const listItems = product_card.map((item) =>
         <CardContent>
-         
-            <div className="card" key={item.id}>
-                <div className="card_img">
-                    <img src={item.thumb} />
-                </div>
-                <div className="card_header">
-                    <Typography variant="body2" color="text.secondary">
-                        <h2>{item.title}</h2>
-                        <p>{item.description}</p>
-                        <p className="price">{item.price}</p>
-                        <Button id='FoodCart__button' variant='contained'>Add to cart</Button>
-                    </Typography>
-                </div>
+            <CardMedia className="card_img">
+                <img src={item.thumb}
+                height ="120" />
+            </CardMedia>
+            <div className="Resturant_product_head">
+                <Typography variant="h5" component="div">
+                    {item.title}
+                </Typography>
+                      <Typography variant="body2" color="text.secondary">{item.description}</Typography>
+                      <Typography variant="body1" color="rgb">{item.price}</Typography>
+                    <Button id='FoodCart__button' variant='contained'>Add to cart</Button>
+            
             </div>
-         
+
+
         </CardContent>
 
     )
+
     return (
         <div className="main_content">
 

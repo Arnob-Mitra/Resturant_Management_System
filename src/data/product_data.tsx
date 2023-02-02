@@ -1,44 +1,45 @@
+
 const product_card = [
     {
-        id: '1',
+      
         title: 'Burger',
         description: "Chicken , Crispy",
-        price: '260',
-        thumb: "./images/2.png"
+        price: '260 taka',
+        thumb: "../../assets/images.jpg"
     },
     {
-        id: 2,
+        
         title: "Pizza",
         description: "Chicken ,Crispy ",
-        price: 250,
+        price: '250 taka',
         thumb: "./images/2.png"
     },
     {
-        id: 3,
+        
         title: "Fried Rice",
         description: "Chicken ,Crispy ",
-        price: 350,
+        price: '350 taka',
         thumb: "./images/3.png"
     },
     {
-        id: 4,
+       
         title: "Pasta",
         description: "Chicken ,Crispy ",
-        price: 350,
+        price: '240 taka',
         thumb: "./images/1.png"
     },
     {
-        id: 5,
+       
         title: "Pizza",
         description: "Chicken ,Crispy ",
-        price: 250,
+        price: '599 taka',
         thumb: "./images/2.png"
     },
     {
-        id: 6,
+       
         title: "Fried Rice",
         description: "Chicken ,Crispy ",
-        price: 350,
+        price: '400 taka',
         thumb: "./images/3.png"
     },
    
