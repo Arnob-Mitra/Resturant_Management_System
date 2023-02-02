@@ -1,19 +1,73 @@
-@use "../../styles/colors";
+.main_content{
+    @extend.dflex;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 50px auto;
+    padding: 50 px 0 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-#Resturant_Food_card{
-    //margin-top: 10vh;
-    width: 224px;
-    height: 298.67px;
-    left: 1.67px;
-    top: 199.8px;
+.card{
+    width: 30%;
+    border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    transform: scale(.8);
+    transition: all .3s ;
+    margin-bottom: 50px;
+
+}
+.dflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_img{
+    margin-top: -5vw;
+}
+
+img{
+    width: 200px;
+}
+
+.card_header{
+    @extend .dflex;
+    flex-direction: column;
+    color: white;
+    margin: 25px 0;
+}
+
+h2{
+    font-size:30px;
+}
+p{
+    font-size: 14px;
+    text-align: center;
+    color:rgba($color: #3a0505, $alpha: 1.0);
+    margin: 8px 0;
+} 
+
+.price{
+    font-size: 20px;
+    color: rgb(4, 4, 71);
+}
+span{
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #FoodCart__button{
-    margin: auto !important;
-	margin-top: 1rem !important;
-	font-size: large;
-	background-color: colors.$mid-blue;
+	margin: 1px !important;
+	margin-top: 1px !important;
+	font-size: small;
+	background-color: rgb(69, 1, 1);
 	&:hover {
 		transform: scale(1.1);
-}
+
+    }
 }

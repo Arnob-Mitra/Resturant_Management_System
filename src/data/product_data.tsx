@@ -1,10 +1,10 @@
 const product_card = [
     {
-        id: 1,
-        title: "Burger",
-        description: "Chicken ,Crispy ",
-        price: 350,
-        thumb: "./images/1.png"
+        id: '1',
+        title: 'Burger',
+        description: "Chicken , Crispy",
+        price: '260',
+        thumb: "./images/2.png"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const product_card = [
     },
     {
         id: 3,
-        title: "Frired Rice",
+        title: "Fried Rice",
         description: "Chicken ,Crispy ",
         price: 350,
         thumb: "./images/3.png"
@@ -36,7 +36,7 @@ const product_card = [
     },
     {
         id: 6,
-        title: "Frired Rice",
+        title: "Fried Rice",
         description: "Chicken ,Crispy ",
         price: 350,
         thumb: "./images/3.png"
