@@ -32,6 +32,7 @@ const Search = styled('div')(({ theme }) => ({
   },
 }));
 
+
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
   height: '100%',
@@ -45,7 +46,7 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: 'inherit',
   '& .MuiInputBase-input': {
-    padding: theme.spacing(1, 1, 1, 0),
+    padding: theme.spacing(1, 3, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create('width'),
@@ -109,7 +110,7 @@ export default function Header() {
     <Menu
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
-        vertical: 'top',
+        vertical: 'center',
         horizontal: 'right',
       }}
       id={mobileMenuId}
@@ -129,15 +130,18 @@ export default function Header() {
 
   return (
     <div id={''}>
+      
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar  style={{ background: '#2E3B57' }}
+        position="static">
           <Toolbar>
             <IconButton
               size="large"
-              edge="start"
+              edge="end"
               color="inherit"
-              aria-label="open drawer"
-              sx={{ mr: 2 }}
+              aria-label="top"
+              sx={{ mr: 6 }}
+              
             >
               <MenuIcon />
             </IconButton>
@@ -147,13 +151,14 @@ export default function Header() {
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                
+                placeholder="Search your food..."
                 inputProps={{ 'aria-label': 'search' }}
               />
             </Search>
             <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+            <Box sx={{ display: { xs: 'none', md: 'flex'   } }}>
+              <IconButton size="large" aria-label="show 4 new mails" color="default">
                 <Badge badgeContent={4} color="error">
                   <MailIcon />
                 </Badge>
@@ -164,7 +169,7 @@ export default function Header() {
                 color="inherit"
               >
                 <Badge badgeContent={17} color="error">
-                  <NotificationsIcon />
+                 
                 </Badge>
               </IconButton>
 
@@ -176,5 +181,7 @@ export default function Header() {
         {renderMenu}
       </Box>
     </div>
+
+    
   );
 }

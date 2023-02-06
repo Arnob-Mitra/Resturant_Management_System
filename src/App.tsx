@@ -1,5 +1,6 @@
 import React from 'react';
-import Cart from './components/Cart';
+import FoodCard from './components/GenericCard';
+
 
 import Header from './components/Header';
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Cart/>
+      <FoodCard/>
     
 
     </div>
