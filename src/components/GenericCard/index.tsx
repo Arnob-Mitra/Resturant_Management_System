@@ -1,60 +1,50 @@
 import React from 'react'
 import { useState } from 'react';
-import product_card from '../../data/product_data';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import { products } from '../../data';
 import './index.scss';
-import { Button } from '@mui/material';
-import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
-import { RemoveShoppingCart } from '@mui/icons-material';
+import { Button, Typography } from '@mui/material';
+import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
+import RemoveCircleRoundedIcon from '@mui/icons-material/RemoveCircleRounded';
+
 
 const GenericCard = () => {
     const [counter, setCounter] = useState(0);
     const incrementHandler = () => {
         setCounter((val) => val + 1)
     }
-
     const decrementHandler = () => {
         setCounter((val) => val - 1)
     }
-    console.log(product_card);
-    const listItems = product_card.map((item) =>
-
-        <CardContent id="GenericCard__head">
-           <CardMedia >
-                <img className="GenericCard__img" src={item.thumb} />
-            </CardMedia>
-            <Typography variant="h5" component="div">
-                {item.title}
-            </Typography>
-            <br />
-            <Typography className="GenericCard__description" variant="subtitle2" >{item.description}</Typography>
-            <Typography className="GenericCaed__Price" variant="body1" >{item.price}</Typography>
-
-            <div className="GenericCard__button">
-                <Button className="GenericCard__Icon" startIcon={<RemoveShoppingCart/>} onClick={decrementHandler}>-</Button>
-                <Typography className="grid-item">{counter}</Typography>
-                <Button className="GenericCard__Icon" startIcon={<AddShoppingCart/>} onClick={incrementHandler}>+</Button>
-            </div>
-
-        </CardContent>
-
-
-
-    )
-
-
-    
 
 
     return (
+        <main>
+            {
+                products.map((product, index) => (
 
-        <div className="main_content">
+                    <div className='GenericCard__Screen'>
+                        <div className='GenericCard__ProductDetails'>
+                        <Typography className='GenericCard__Title' variant="body1" key={index} >{product.title}</Typography>
+                        <Typography className='GenericCard__Description' variant="body2" key={index} >{product.description}</Typography>
+                    </div>    
+                        <img className="GenericCard__Image" src={product.thumb} alt="g"/>
+                        <Typography className="GenericCard__Price" variant="body2" >{product.price}</Typography>
+                        <div className="GenericCard__button">
+                            <RemoveCircleRoundedIcon className="GenericCard__Icon" onClick={decrementHandler} />
+                            <Typography className="grid-item">{counter}</Typography>
+                            <AddCircleRoundedIcon className="GenericCard__Icon" onClick={incrementHandler} />
+                            
+                        </div>
 
-            {listItems}
+                    </div>
 
-        </div>
+
+
+                ))
+            }
+        </main>
     )
+
 }
+
 export default GenericCard;

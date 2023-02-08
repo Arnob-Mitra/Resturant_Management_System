@@ -1,63 +1,64 @@
-#GenericCard__head {
-    background-color: rgb(203, 121, 58);
-    position: center;
-    width: 70vw;
-    margin: 1rem 2.5vw;
+.GenericCard__Screen{
     display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: 5vw;
+    margin: 1.5rem 2.5vw;
     justify-content: center;
     align-items: right;
     align-content: center;
-    box-shadow: 0px 5px 5px;
-
-}
-
-.main_content {
-    @extend.dflex;
-    position: relative;
-    width: 88%;
-    height: 75%;
-    margin: 20px 20px;
-    padding: 77 px 0 0;
     box-sizing: border-box;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    border-bottom: solid #d3d3d3 0.05rem;
+    padding: 0.2rem ;
+    
+}
+.GenericCard__ProductDetails{
+      width: 100% ;
+      padding-bottom:0.9%;
+      padding: 0.3rem;
+      align-content: center;
+      
 }
 
-.dflex {
+.GenericCard__Image{
+    width: 90%;
+    padding: .5rem;
+}
+
+
+.GenericCard__Title{
+  font-size: large;
+  font-weight: 600 !important; 
+}
+.GenericCard__button{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.GenericCard__img {
-    width: 100%;
-}
-
-.GenericCard__description {
-    color: rgb(31, 20, 6);
-}
-
-.GenericCard__Price {
-    color: #000;
-}
-
-.GenericCard__button {
-    display: flex;
-    justify-content: right;
+    justify-content: left;
     grid-template-columns: auto auto auto ;
-    padding: 1px;
-    align-content: right;
+    padding: 0.9rem;
+    padding-left: 1.8rem;
+    
+}
+.GenericCard__Description{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+}
+.GenericCard__Price{
+    color: #1f0303;
+    font-weight: bolder !important;
+    padding: 3%;
+    
 }
 
-.grid-item {
-    border: 1px solid rgba($color: #94b94c, $alpha: 1.0);
-    background-color: antiquewhite;
-    padding: 2.3px;
-    font-size: 2px;
-    text-align: right;
 
-}
 
-.GenericCard__Icon{
-    background-color: antiquewhite;
-}
+
+
+
+
+
+
+
+
+
+
+
