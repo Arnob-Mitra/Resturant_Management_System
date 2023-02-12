@@ -2,8 +2,6 @@ import React, { Fragment } from 'react'
 import { useState } from 'react';
 import { products } from '../../data';
 import './index.scss';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-
 
 const GenericCard = () => {
     const [counter, setCounter] = useState<Record<string, number>>({});
@@ -28,12 +26,12 @@ const GenericCard = () => {
                             </div> 
                             <img className="GenericCard__Image" src={product.thumb} alt="g" />
                              <h4 className="GenericCard__Price" >{product.price}</h4> 
-                             <div className="GenericCard__button">
-                                <button className="GenericCard__DecrementIcon" onClick={() => {decrementHandler(index) }} />
+                              <div className='GenericCard__button'>
+                                <img className="GenericCard__DecrementIcon" src="../../assets/minusIcon.png" onClick={() => {decrementHandler(index) }}/>
                                 <h5 className="GenericCard__CounterText">{counter[index] ? counter[index] : 0}</h5>
-                                <button className="GenericCard__IncrementIcon" onClick={() => {incrementHandler(index) }} /> 
-                            </div> 
-                        </div>
+                                <img className="GenericCard__IncrementIcon" src="../../assets/addIcon.png" onClick={() => {incrementHandler(index) }} /> 
+                             </div>
+                            </div>
                     </Fragment>
                 ))
             }

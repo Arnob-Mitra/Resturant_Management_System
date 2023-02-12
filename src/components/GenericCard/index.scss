@@ -28,6 +28,7 @@
     grid-template-columns: auto auto auto;        
     margin-top: 4%;
     margin-right: 15%;
+    gap: 2rem;
 }
 
 .GenericCard__Description{
@@ -48,8 +49,7 @@
 
 .GenericCard__IncrementIcon{
     border-radius: 50%;
-    height:19px;
-    
+    height:19px;    
 }
 
 .GenericCard__CounterText{
