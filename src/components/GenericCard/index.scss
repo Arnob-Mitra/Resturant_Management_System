@@ -1,53 +1,64 @@
 .GenericCard__Screen{
     display: grid;
     grid-template-columns: 60% 40%;
-    margin-top: 5vw;
-    margin: 1.5rem 2.5vw;
-    justify-content: center;
-    align-items: right;
-    align-content: center;
-    box-sizing: border-box;
+    box-sizing: border-box ;
     border-bottom: solid #d3d3d3 0.05rem;
-    padding: 0.2rem ;
-    
+    padding: 1rem;
 }
+
 .GenericCard__ProductDetails{
-      width: 100% ;
-      padding-bottom:0.9%;
-      padding: 0.3rem;
-      align-content: center;
-      
+    width: 90% ;    
+}
+.GenericCard__Title{
+    margin-bottom: 3%;
 }
 
 .GenericCard__Image{
-    width: 90%;
-    padding: .5rem;
+    width: 80%;
+    margin-bottom: 5%;
 }
 
-
-.GenericCard__Title{
-  font-size: large;
-  font-weight: 600 !important; 
-}
-.GenericCard__button{
-    display: flex;
-    justify-content: left;
-    grid-template-columns: auto auto auto ;
-    padding: 0.9rem;
-    padding-left: 1rem;
-    
-}
 .GenericCard__Description{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
+    font-size: small;
 }
+
+.GenericCard__button{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;        
+    margin-top: 4%;
+    margin-right: 15%;
+}
+
+.GenericCard__Description{
+    overflow: hidden;
+    text-overflow: ellipsis;        
+}
+
+.GenericCard__Description,
 .GenericCard__Price{
-    color: #1f0303;
-    font-weight: bolder !important;
-    padding: 3%;
+    font-weight: 400 !important;
+    margin: 0 !important;
+}
+
+.GenericCard__DecrementIcon{
+    border-radius: 50%;
+    height:19px;
+}
+
+.GenericCard__IncrementIcon{
+    border-radius: 50%;
+    height:19px;
     
 }
+
+.GenericCard__CounterText{
+    margin: 0 !important;
+}
+
+
+
+
 
 
 

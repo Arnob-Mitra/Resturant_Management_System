@@ -1,19 +1,19 @@
 import React from 'react';
-import FoodCard from './components/GenericCard';
-
-
-import Header from './components/Header';
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import GenericCard from './components/GenericCard';
+import FoodMainPage from './components/Page/FoodMainPage';
+import FoodHomeSearch from './FoodHomeSearchBar';
 
 
 function App() {
+  const router = createBrowserRouter([
+    { path: '/s', element: <FoodHomeSearch/> },
+    { path: '/', element: <GenericCard /> },
+    { path: '/l', element: <FoodMainPage/> },  
+  ])
+ 
   return (
-    <div>
-      <Header/>
-      <FoodCard/>
-    
-
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
