@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-radius;
+    font-family: 'montserrat', sans-serif;
+}
+.FoodHomeSearch__navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(230, 165, 44);
+    color: rgb(56, 15, 15);
+    border-radius: 5%;
+}
+.FoodHomeSearch__logo{
+    font-size: 20px;
+    padding-bottom: 4%;
+}
+.FoodHomeSearch__nav-links{
+    position: absolute;
+    display: inside;
+    list-style: none;
+    color: white;
+    left: 1%;
+    transition: all 0.2s ease;
+    width: 100%;
+
+}
+
+.FoodHomeSearch__Menu,
+.FoodHomeSearch_SignIn
+             {
+    color: white;
+    padding: 32px;
+    transition: all 0.2s ease;
+    text-align: center;
+    width: 100%;
+}
+.FoodHomeSearch_searchBox{
+    height: 15px;
+    display: flex;
+    padding-left: 30%;
+    padding-top: 0%;
+    border-radius: 10%;
+}
+
+

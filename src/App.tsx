@@ -7,10 +7,10 @@ import FoodHomeSearch from './FoodHomeSearchBar';
 
 function App() {
   const router = createBrowserRouter([
-    { path: '/s', element: <FoodHomeSearch/> },
-    { path: '/', element: <GenericCard /> },
+    { path: '/', element: <FoodHomeSearch/> },
+    { path: '/s', element: <GenericCard /> },
     { path: '/l', element: <FoodMainPage/> },  
-  ])
+   ])
  
   return (
     <RouterProvider router={router} />
