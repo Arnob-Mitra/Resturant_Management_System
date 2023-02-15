@@ -1,29 +1,23 @@
-import React , {useState}from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import './index.scss';
 
 const FoodHomeSearch = () => {
 
   return (
-    <nav className='FoodHomeSearch__navbar'>
-      <h3 className='FoodHomeSearch__logo'>Food-Hub</h3>
-      <ul className='FoodHomeSearch__nav-links'>
-      
-        <div>
-          <li>
-            <Link to="/l" className='FoodHomeSearch__SignIn'>Sign in</Link>
-          </li>
-          <li>
-            <Link to="/s" className='FoodHomeSearch_Menu'>Menu</Link>
-          </li>
-        </div>
-        <li className='FoodHomeSearch_searchBox'>
-          <input type={"search"} placeholder="Search your food..."/>
-          <span className='fas fa-search'></span>
-        </li>
-      </ul>
-       
-    </nav>
-  );
+   <body>
+    <div className='FoodHomeSearch_SearchBox'>
+     <form>
+      <input type="text" placeholder='Search your food...'/>
+      <button type='submit'><img className='FoodHomeSearch_Icon' src ="../../assets/search.png"/></button>
+
+     </form>
+    </div>
+
+
+
+   </body>
+  
+    )
 }
 export default FoodHomeSearch;

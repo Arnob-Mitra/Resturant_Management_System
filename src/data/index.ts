@@ -19,7 +19,7 @@ export const products = [
         title: "Fried Rice",
         description: "Chicken ,Crispy, rice, chicken, veg, yammy soup, good food, new testy ",
         price: 'Tk.350',
-        thumb: "../../assets/fried_rice.jpg"
+        thumb: "../../assets/frontimage.jpg"
     },
     {
        

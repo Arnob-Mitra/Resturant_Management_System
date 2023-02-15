@@ -1,11 +1,20 @@
+.GenericCardHeader__Image{
+  width: 100%;
+  height: 11rem;
+  box-sizing: border-box;
+  box-shadow: 2px 2px  #d3d3d3;
+}
+main{
+    padding-bottom: 13%;
+    padding-top: 4%;
+}
 .GenericCard__Screen{
     display: grid;
     grid-template-columns: 50% 50%;
     box-sizing: border-box ;
     border-bottom: solid #d3d3d3 0.05rem;
-    padding: 1rem;
+    padding: 1rem;   
 }
-
 .GenericCard__ProductDetails{
     width: 90% ;    
 }
@@ -14,7 +23,7 @@
 }
 
 .GenericCard__Image{
-    width: 80%;
+    width: 90%;
     margin-bottom: 5%;
 }
 
@@ -55,6 +64,29 @@
 .GenericCard__CounterText{
     margin: 0 !important;
 }
+.GenericCard__footer-content{
+    position: fixed;
+    bottom: 0;
+    margin-top: 1%;
+    width: 100%;
+    padding-top: 3%;
+    background-color: rgb(149, 150, 215);
+    color: rgb(22, 20, 20);
+    text-align: center;
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 6%;
+    border-bottom: solid #d3d3d3 0.05rem;
+    box-shadow: 2px 2px 2px 2px #d3d3d3;
+}
+.footer-content__viewyourcart{
+    padding-left: 30%;
+}
+.footer-content__totalPrice{
+    padding-bottom: 160%;
+}
+
+
 
 
 

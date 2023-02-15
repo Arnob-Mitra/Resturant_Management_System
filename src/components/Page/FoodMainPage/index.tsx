@@ -9,7 +9,7 @@ const FoodMainPage = () => {
             <h3 className='FoodMainPage__Card_title'  >Food Delivary</h3>
             <p className='FoodMainPage__Card_description'>Best deals on your favourite</p>
           </div>
-          <img className="FoodMainPage__Card_Image" src={"../../assets/delivary.png"} alt="pic" />
+          <img className="FoodMainPage__Card_Image" src={"../../assets/delivary.png"} loading="lazy" alt="pic" />
         </div>
 
         <div className='FoodMainPage__Card'>
