@@ -1,0 +1,53 @@
+.SignUpPage_Title{
+    position:absolute;
+    left:15%;
+    top:2%
+}
+
+.SignUpPage_Phonenumber{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 60px;
+    top: 80px;
+    
+}
+
+.SignUpPage_password{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 60px;
+    top: 85px;
+}
+.SignUpPage_ConfirmPassword{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 60px;
+    top: 90px;
+}
+.SignUpPage__button{
+    position:absolute;
+    width: 150px;
+    height: 50px;
+    left: 30%;
+    top: 43%;
+
+   
+    background-color: #DC143C;
+}
+
+.SignUp_signButton{
+    display: grid;
+    position: absolute;        
+    width: 230px;
+    height: 75px;
+    left: 23%;
+    top: 55%;
+    gap: 2rem;
+}
+.SignupPage_GoogleIcon{
+    font-size: 400px;
+    text-align: center;
+}

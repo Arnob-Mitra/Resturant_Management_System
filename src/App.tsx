@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import FoodMainFooter from './components/FoodHomeFooter';
 import GenericCard from './components/GenericCard';
+import SignIn from './components/NewAccount/SignUp';
 import FoodMainPage from './components/Page/FoodMainPage';
 import FoodHomeSearch from './FoodHomeSearchBar';
 
@@ -12,6 +13,8 @@ function App() {
     { path: '/s', element: <GenericCard /> },
     { path: '/l', element: <FoodMainPage/> },  
     { path: '/r', element: <FoodMainFooter/> },  
+    { path: '/a', element: <SignIn/> },  
+
 
    ])
  
