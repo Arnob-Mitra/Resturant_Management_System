@@ -1,0 +1,64 @@
+.BasicInfo_Title{
+    position:absolute;
+    left:30%;
+    top:3.3%;
+}
+
+.BasicInfo_FullName{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 60px;
+    top: 110px;
+    
+}
+
+.BasicInfo_Email{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 60px;
+    top: 120px;
+}
+.BasicInfo__DateofBirth{
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    left: 16%;
+    top: 33%;
+    font-weight: 100;
+}
+
+.BasicInfo__DateofBirthBox{
+    width: 220px;
+    font-size: large;
+}
+
+
+.BasicInfo_Button{
+    display: grid;
+    position: absolute;
+    grid-template-columns: auto auto;        
+    left: 20%;
+    top: 55%;
+    gap: 2rem
+}
+.BasicInfo__skipbutton{
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30%;
+    width:100px ;
+    background-color: #FF9BAF;
+    left: 20%;
+    top: 55%;
+    gap: 5rem
+}
+.BasicInfo__continuebutton{
+    font-size: 20px;
+    text-align: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 30%;
+    background-color: #DC143C
+    ;
+}
