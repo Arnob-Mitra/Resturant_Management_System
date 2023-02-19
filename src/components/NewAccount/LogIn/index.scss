@@ -1,10 +1,10 @@
-.SignUpPage_Title{
+.LogInPage_Title{
     position:absolute;
-    left:15%;
-    top:3%
+    left:8%;
+    top:3.3%;
 }
 
-.SignUpPage_Phonenumber{
+.LogInPage_Phonenumber{
     position: absolute;
     width: 300px;
     height: 75px;
@@ -13,21 +13,21 @@
     
 }
 
-.SignUpPage_password{
+.LogInPage_password{
     position: absolute;
     width: 300px;
     height: 75px;
     left: 60px;
     top: 120px;
 }
-.SignUpPage_ConfirmPassword{
+.LogInPage_ConfirmPassword{
     position: absolute;
     width: 300px;
     height: 75px;
     left: 60px;
     top: 130px;
 }
-.SignUpPage__button{
+.LogInPage__button{
     position:absolute;
     width: 150px;
     height: 50px;
@@ -47,19 +47,19 @@
     top: 55%;
     gap: 2rem
 }
-.SignupPage_GoogleIcon{
+.LogInPage_GoogleIcon{
     font-size: 20px;
     text-align: left;
     border-radius: 30%;
     background-color: white;
 }
-.SignupPage_facebookIcon{
+.LogInPage_facebookIcon{
     font-size: 20px;
     text-align: left;
     border-radius: 30%;
     background-color: white;
 }
-.SignupPage_instagramIcon{
+.LogInPage_instagramIcon{
     font-size: 20px;
     text-align: left;
     border-radius: 30%;
