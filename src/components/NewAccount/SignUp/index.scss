@@ -4,6 +4,8 @@ $margin: 0.5rem 0;
 
 #SignUpPage__Screen{
     text-align: center;
+    margin: 10%;
+    margin-top: 30%;
 }
 .SignUpPage_Title{
     margin: 1rem !important;
@@ -14,10 +16,11 @@ $margin: 0.5rem 0;
 }
 #SignUpPage__button{
   display: block;
-  margin: 1rem auto;
+  margin: 2rem auto;
   background-color:#DC143C ;
 }
 
 .SignupPage_socialmediaIcon{
     margin: $margin !important;
+    text-align: left;
 }

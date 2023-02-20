@@ -4,20 +4,25 @@ $margin: 0.5rem 0;
 
 #LogInPage__Screen{
     text-align: center;
+    margin: 10%;
+    margin-top: 30%;
 }
 .LogInPage_Title{
-    margin: 1rem !important;
+    margin-bottom: 8% !important;
 }
 
 .LogInPage_Textfield{
     margin: $margin !important;
+    margin-bottom: 9%
+}
+.LogInPage_ForgotPassword{
+    left: 90%;
 }
 #LogInPage__button{
   display: block;
   margin: 1rem auto;
   background-color:#DC143C ;
 }
-
 .LogInPage_socialmediaIcon{
     margin: $margin !important;
 }

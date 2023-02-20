@@ -3,6 +3,8 @@ $margin: 0.7rem 0;
 
 #BasicInfo__Screen{
     text-align: center;
+    margin: 10%;
+    margin-top: 40%;
 }
 .BasicInfo_Title{
     margin: 1rem !important;
@@ -11,19 +13,30 @@ $margin: 0.7rem 0;
     margin: $margin !important;
 }
 
+#BasicInfo_GenderForm{
+    margin-right: 80% !important;
+    margin-top: 1%;
+}
+
+.BasicInfo_GenderFormTitle{
+    font-size: large;
+}
+
 #BasicInfo__button{
     display: grid;
     grid-template-columns: auto auto;
-    margin: 3rem ;
-    gap: 1rem;
+    margin-top: 15%;
 }
 
 .BasicInfo__Skipbutton{
-    float:left;
+    align-self: flex-start;
+    width: fit-content;
     background-color:pink ;
 }
 
 .BasicInfo__Continuebutton{
-    float: right;
-    background-color:#DC143C
+    align-self: flex-end;
+    width: fit-content;
+    background-color:#DC143C;
+    margin-right: 20%;
 }
