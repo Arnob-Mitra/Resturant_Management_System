@@ -1,27 +1,25 @@
 import React from "react";
 import './index.scss';
-import {TextField} from "@mui/material";
-
+import {Button, TextField, Typography,} from "@mui/material";
+import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import dayjs, { Dayjs } from 'dayjs';
 
 const BasicInfo = () => {
+  const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'));
   return (
-    <div className="BasicInfo__Screen">
-      <h1 className="BasicInfo_Title">Basic Info</h1>
-      <TextField variant='outlined' label='Full Name' className='BasicInfo_FullName' />
-      <TextField variant='outlined' label='Email Address' required type='email' className='BasicInfo_Email' />
-      <div className="BasicInfo__DateofBirth"><h4>Date of Birth:</h4>
-        <input className="BasicInfo__DateofBirthBox" type="date" id="start" name="trip-start"
-         value="2018-07-22" min="1901-01-01" max="2023-12-31"></input>
-      </div>
+    <div id="BasicInfo__Screen">
+      <Typography variant="h4" className="BasicInfo_Title">Basic Info</Typography>
+      <TextField variant='outlined' label='Full Name' required type="name" className='BasicInfo_TextField' />
+      <TextField variant='outlined' label='Email Address' required type='email' className='BasicInfo_TextField' />
+      
 
       <div className="BasicInfo__Gender">
       </div>
-      
-    <div className="BasicInfo_Button">
-      <button className="BasicInfo__skipbutton" >Skip</button>
-      <button className="BasicInfo__continuebutton" >Continue</button>
-    </div>
-      
+
+      <Button variant='contained' id="BasicInfo__button" >Skip</Button>
+      <Button variant='contained' id="SignUpPage__button" >Continue</Button>
+
+
     </div>
   )
 }

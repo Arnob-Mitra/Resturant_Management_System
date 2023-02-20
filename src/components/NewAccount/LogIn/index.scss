@@ -1,67 +1,23 @@
+@use "../../../styles/colors";
+
+$margin: 0.5rem 0;
+
+#LogInPage__Screen{
+    text-align: center;
+}
 .LogInPage_Title{
-    position:absolute;
-    left:8%;
-    top:3.3%;
+    margin: 1rem !important;
 }
 
-.LogInPage_Phonenumber{
-    position: absolute;
-    width: 300px;
-    height: 75px;
-    left: 60px;
-    top: 110px;
-    
+.LogInPage_Textfield{
+    margin: $margin !important;
+}
+#LogInPage__button{
+  display: block;
+  margin: 1rem auto;
+  background-color:#DC143C ;
 }
 
-.LogInPage_password{
-    position: absolute;
-    width: 300px;
-    height: 75px;
-    left: 60px;
-    top: 120px;
-}
-.LogInPage_ConfirmPassword{
-    position: absolute;
-    width: 300px;
-    height: 75px;
-    left: 60px;
-    top: 130px;
-}
-.LogInPage__button{
-    position:absolute;
-    width: 150px;
-    height: 50px;
-    left: 33%;
-    top: 43%;
-    background-color: #DC143C;
-    font-size: large;
-    border-radius: 50%;
-}
-
-.SignUp_signButton{
-    display: grid;
-    position: absolute;        
-    width: 270px;
-    height: 85px;
-    left: 20%;
-    top: 55%;
-    gap: 2rem
-}
-.LogInPage_GoogleIcon{
-    font-size: 20px;
-    text-align: left;
-    border-radius: 30%;
-    background-color: white;
-}
-.LogInPage_facebookIcon{
-    font-size: 20px;
-    text-align: left;
-    border-radius: 30%;
-    background-color: white;
-}
-.LogInPage_instagramIcon{
-    font-size: 20px;
-    text-align: left;
-    border-radius: 30%;
-    background-color: white;
+.LogInPage_socialmediaIcon{
+    margin: $margin !important;
 }
