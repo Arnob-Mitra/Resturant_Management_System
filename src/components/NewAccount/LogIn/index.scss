@@ -16,13 +16,19 @@ $margin: 0.5rem 0;
     margin-bottom: 9%
 }
 .LogInPage_ForgotPassword{
-    left: 90%;
+    margin-left: auto !important;
+    float:right;
+    display: block;
 }
 #LogInPage__button{
   display: block;
-  margin: 1rem auto;
+  margin: 2.8rem auto;
   background-color:#DC143C ;
 }
 .LogInPage_socialmediaIcon{
     margin: $margin !important;
+}
+
+.LogInPage_BackToSignUp{
+    margin-top: 2.8rem auto;
 }
