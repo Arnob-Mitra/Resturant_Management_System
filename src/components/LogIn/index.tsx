@@ -15,7 +15,7 @@ const LogIn = () => {
       <Button variant='outlined' className="LogInPage_socialmediaIcon"> <img src="../../assets/googleIcon.png" alt="" />Log In with Google</Button>
       <Button variant='outlined' className="LogInPage_socialmediaIcon"> <img src="../../assets/facebookIcon.png" alt="" />Log In with facebook</Button>
       <Button variant='outlined' className="LogInPage_socialmediaIcon"> <img src="../../assets/instagramIcon.png" alt="" />Log In with Instagram</Button>
-      <Typography className="LogInPage_BackToSignUp">Don't have an account?   <a href="/a"> Sign In</a></Typography>
+      <Typography className="LogInPage_BackToSignUp">Don't have an account?   <a href="/s"> Sign In</a></Typography>
     </div>
   )
 }

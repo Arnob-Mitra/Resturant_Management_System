@@ -13,9 +13,6 @@ const FoodHomeSearch = () => {
 
      </form>
     </div>
-
-
-
    </body>
   
     )

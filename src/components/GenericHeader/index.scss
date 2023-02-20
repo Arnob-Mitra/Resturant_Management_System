@@ -1,0 +1,12 @@
+#GenericHeader__Head{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    background-color: red;
+}
+
+.GenericHeader__icon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}

@@ -5,7 +5,7 @@ $margin: 0.5rem 0;
 #LogInPage__Screen{
     text-align: center;
     margin: 10%;
-    margin-top: 30%;
+    margin-top: 25%;
 }
 .LogInPage_Title{
     margin-bottom: 8% !important;
@@ -13,7 +13,7 @@ $margin: 0.5rem 0;
 
 .LogInPage_Textfield{
     margin: $margin !important;
-    margin-bottom: 9%
+    margin-bottom: 7%
 }
 .LogInPage_ForgotPassword{
     margin-left: auto !important;
@@ -30,5 +30,7 @@ $margin: 0.5rem 0;
 }
 
 .LogInPage_BackToSignUp{
-    margin-top: 2.8rem auto;
+    margin-bottom: 10rem;
+    float:0;
+    display: block;
 }
