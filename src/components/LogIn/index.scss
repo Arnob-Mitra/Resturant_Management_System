@@ -5,7 +5,7 @@ $margin: 0.5rem 0;
 #LogInPage__Screen{
     text-align: center;
     margin: 10%;
-    margin-top: 25%;
+    margin-top: 0%;
 }
 .LogInPage_Title{
     margin-bottom: 8% !important;
@@ -33,4 +33,17 @@ $margin: 0.5rem 0;
     margin-bottom: 10rem;
     float:0;
     display: block;
+}
+#LogInPage__Screen2{
+    text-align: center;
+    background-color:rgba(220, 20, 60, 0.5) ;
+}
+.LogInPage_TitleOfProduct{
+    font-size: 500 !important;
+}
+.LogInPage__Screen2Image{
+   width: 75%;
+   margin-top: 15%;
+   margin-left: 5%;
+
 }

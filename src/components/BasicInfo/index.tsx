@@ -14,6 +14,7 @@ import FormLabel from '@mui/material/FormLabel';
 const BasicInfo = () => {
   const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'));
   return (
+    <main id= "BasicInfo__wholeScreen">
     <div id="BasicInfo__Screen">
       <Typography variant="h4" className="BasicInfo_Title">Basic Info</Typography>
       <TextField fullWidth variant='outlined' label='Full Name' required type="name" className='BasicInfo_TextField' />
@@ -49,8 +50,13 @@ const BasicInfo = () => {
         <Button variant='contained'  className="BasicInfo__Skipbutton" >Skip </Button>
         <Button variant='contained' className="BasicInfo__Continuebutton" >Continue </Button>
       </div>
-
     </div>
+       <div id="BasicInfo__Screen2">
+       <Typography variant="h6" className="BasicInfo_TitleOfProduct">Title of the Product</Typography>
+       <Typography variant="subtitle1" className="BasicInfo_TitleOfProduct2">A Brief Discription</Typography>
+       <img className="BasicInfo__Screen2Image" src="../../assets/resturant2.jpg" alt="" />
+     </div>
+   </main>
   )
 }
 

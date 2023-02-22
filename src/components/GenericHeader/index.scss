@@ -1,12 +1,18 @@
-#GenericHeader__Head{
+#GenericHeader__navbar{
     display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto;
-    background-color: red;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    height:75px;
+    background-color:#DC143C ;
+}
+.GenericHeader__Logo{
+    color: aliceblue;
 }
 
+.GenericHeader__searchbox{
+    background-color: white;  
+}
 .GenericHeader__icon{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    color: aliceblue;
 }

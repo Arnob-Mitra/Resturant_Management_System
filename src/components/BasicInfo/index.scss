@@ -1,10 +1,15 @@
 @use "../../../styles/colors";
 $margin: 0.7rem 0;
 
+#BasicInfo__wholeScreen{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
 #BasicInfo__Screen{
     text-align: center;
     margin: 10%;
-    margin-top: 40%;
+    margin-top: 0%;
 }
 .BasicInfo_Title{
     margin: 1rem !important;
@@ -39,4 +44,17 @@ $margin: 0.7rem 0;
     width: fit-content;
     background-color:#DC143C;
     margin-right: 20%;
+}
+
+#BasicInfo__Screen2{
+    text-align: center;
+    background-color:rgba(220, 20, 60, 0.5) ;
+}
+.BasicInfo_TitleOfProduct{
+    font-size: 500 !important;
+}
+.BasicInfo__Screen2Image{
+   width: 75%;
+   margin-top: 15%;
+   margin-left: 5%;
 }

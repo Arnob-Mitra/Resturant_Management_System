@@ -1,17 +1,25 @@
 import React from 'react'
-import {AppBar, TextField, Typography} from '@mui/material';
+import {Typography, TextField} from '@mui/material';
+import './index.scss';
+import { type } from 'os';
+import{useState} from 'react'
+
 
 const GenericHeader = () => {
   return (
+     <div id='GenericHeader__navbar'>
+       <Typography className='GenericHeader__Logo'>Logo
+         <li><a className='Genericcard__MenuItem' href='/s'>Sign Up</a></li>
+         <li><a className='GenericCard__MenuItem' href='/l'>Log In</a></li>
 
-    <header id='GenericHeader__Head'>
-      <Typography className='GenericHeader__icon'>
-        Icon
-      </Typography>
-      <div className='GenericHeader__SearchBox'>
-      <TextField variant='outlined' label='Search your food' className='LogInPage_Textfield' />
-      </div> 
-    </header>
+       
+       </Typography>
+       <TextField className='GenericHeader__searchbox' id='search-bar' >
+         <input type="Search" id="mySearch"name="q" placeholder="Search your food…" />
+         <button>Search</button>
+       </TextField>
+       <Typography className='GenericHeader__icon'>Pic</Typography>
+     </div>
   )
 }
 

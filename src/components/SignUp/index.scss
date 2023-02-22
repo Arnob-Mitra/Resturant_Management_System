@@ -2,10 +2,15 @@
 
 $margin: 0.5rem 0;
 
+#SignupPage__wholeScreen{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
 #SignUpPage__Screen{
     text-align: center;
     margin: 10%;
-    margin-top: 30%;
+    margin-top: 0%;
 }
 .SignUpPage_Title{
     margin: 1rem !important;
@@ -23,4 +28,17 @@ $margin: 0.5rem 0;
 .SignupPage_socialmediaIcon{
     margin: $margin !important;
     text-align: left;
+}
+#SignUpPage__Screen2{
+    text-align: center;
+    background-color:rgba(220, 20, 60, 0.5) ;
+}
+.SignUpPage_TitleOfProduct{
+    font-size: 500 !important;
+}
+.SignUpPage__Screen2Image{
+   width: 75%;
+   margin-top: 15%;
+   margin-left: 5%;
+
 }
