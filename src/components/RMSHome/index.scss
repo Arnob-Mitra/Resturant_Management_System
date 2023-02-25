@@ -1,0 +1,56 @@
+#RMSHome__screen{
+    display: grid;
+    grid-template-columns: 15% 60% 20% ;
+}
+
+.RMSHome__sidemenu{
+    box-sizing: border-box ;
+    border-bottom: solid #d3d3d3 0.5rem;
+    padding: 1rem; 
+}
+.RMSHome__Sidemenu_menulist{
+    width: 10rem;
+    height: 5rem;
+    text-align: left;
+}
+
+#RMSHome__centerbox{
+   display: grid;
+   grid-template-rows: 50% 65% 10%;
+   margin-top: 1.3rem;
+}
+.RMSHome__centerbox_top{
+    color: grey;
+    text-align:0.5rem;
+    box-sizing: border-box ;  
+}
+.RMSHome__centerbox_topbox{
+   
+}
+.RMSHome__centerbox_receipt{
+     box-sizing: border-box;
+     border-style: dotted solid;
+     
+}
+
+#RMSHome_center__button{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 7%;
+}
+.RMSHome__CancelButton{
+    align-self: flex-start;
+    width: fit-content;
+    background-color:pink ;
+}
+.RMSHome__SubmitButton{
+    align-self: flex-end;
+    width: fit-content;
+    background-color:#DC143C;
+}
+.RMSHome__Leftmenu_menulist{
+    width: 15rem;
+    height: 5rem;
+    text-align: left;
+    background-color: yellow;
+}

@@ -8,6 +8,7 @@ import SignIn from './components/SignUp';
 import FoodMainPage from './Page/FoodMainPage';
 import FoodHomeSearch from './FoodHomeSearchBar';
 import GenericHeader from './components/GenericHeader';
+import RMSHome from './components/RMSHome';
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
     { path: '/s', element: <SignIn/> },  
     { path: '/l', element: <LogIn/> },  
     { path: '/b', element: <BasicInfo/> }, 
-    { path: '/w', element: <GenericHeader/> },  
+    { path: '/w', element: <GenericHeader/> }, 
+    { path: '/rmshome', element: <RMSHome/> },  
+
 
 
 
