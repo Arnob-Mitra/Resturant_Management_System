@@ -4,6 +4,7 @@ $margin: 0.7rem 0;
 #BasicInfo__wholeScreen{
     display: grid;
     grid-template-columns: 50% auto;
+    height: 100vh;
 }
 
 #BasicInfo__Screen{
@@ -30,25 +31,22 @@ $margin: 0.7rem 0;
 #BasicInfo__button{
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 15%;
+    margin-top: 7%;
 }
-
 .BasicInfo__Skipbutton{
     align-self: flex-start;
     width: fit-content;
     background-color:pink ;
 }
-
 .BasicInfo__Continuebutton{
     align-self: flex-end;
     width: fit-content;
     background-color:#DC143C;
-    margin-right: 20%;
 }
-
 #BasicInfo__Screen2{
     text-align: center;
     background-color:rgba(220, 20, 60, 0.5) ;
+    align-content: center;
 }
 .BasicInfo_TitleOfProduct{
     font-size: 500 !important;

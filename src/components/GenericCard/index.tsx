@@ -43,7 +43,7 @@ const GenericCard = () => {
                 </div>
                 <p className='GenericCardHeader__MoreImages'>More Images</p>
             </div>
-           <main>
+           <main id='GenericCardHeader__MenuCard'>
                 {
                  products.map((product, index) => (
                         <Fragment key={index} >

@@ -17,8 +17,8 @@ const BasicInfo = () => {
     <main id= "BasicInfo__wholeScreen">
     <div id="BasicInfo__Screen">
       <Typography variant="h4" className="BasicInfo_Title">Basic Info</Typography>
-      <TextField fullWidth variant='outlined' label='Full Name' required type="name" className='BasicInfo_TextField' />
-      <TextField fullWidth variant='outlined' label='Email Address' required type='email' className='BasicInfo_TextField' />
+      <TextField fullWidth variant='outlined' label='Full Name'  className='BasicInfo_TextField' />
+      <TextField fullWidth variant='outlined' label='Email Address' type='email' className='BasicInfo_TextField' />
 
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
@@ -37,8 +37,9 @@ const BasicInfo = () => {
       <FormControl id="BasicInfo_GenderForm" >
         <FormLabel id="BasicInfo_GenderForm"><Typography variant="h6">Gender</Typography></FormLabel>
         <RadioGroup
-          row
-          aria-labelledby="BasicInfo_GenderForm"
+          row={true}
+          name="row-radio-buttons-group"
+          aria-labelledby="demo-row-radio-buttons-group-label"
         >
           <FormControlLabel value="female" control={<Radio />} label="Female" />
           <FormControlLabel value="male" control={<Radio />} label="Male" />
