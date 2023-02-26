@@ -1,56 +1,93 @@
 #RMSHome__screen{
     display: grid;
-    grid-template-columns: 15% 60% 20% ;
+    grid-template-columns: 13% 50% 37% ;
+    top:4%
 }
-
 .RMSHome__sidemenu{
     box-sizing: border-box ;
-    border-bottom: solid #d3d3d3 0.5rem;
-    padding: 1rem; 
+    padding: 0.5rem; 
 }
 .RMSHome__Sidemenu_menulist{
-    width: 10rem;
+    width: 12rem;
     height: 5rem;
     text-align: left;
 }
-
 #RMSHome__centerbox{
    display: grid;
-   grid-template-rows: 50% 65% 10%;
-   margin-top: 1.3rem;
+   grid-template-rows: 20% 85% 10%;
+   margin-top: 0.5rem;
 }
 .RMSHome__centerbox_top{
-    color: grey;
-    text-align:0.5rem;
-    box-sizing: border-box ;  
+    display: grid;
+    grid-template-columns: auto auto;
+    box-sizing: border-box ; 
+
 }
 .RMSHome__centerbox_topbox{
-   
+   box-sizing: border-box;
 }
 .RMSHome__centerbox_receipt{
-     box-sizing: border-box;
-     border-style: dotted solid;
-     
-}
 
+     box-sizing: border-box;
+     border-style: dotted solid;    
+}
 #RMSHome_center__button{
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 7%;
+    margin-top: 1%;
+    
 }
 .RMSHome__CancelButton{
     align-self: flex-start;
+    margin-right: 20%;
     width: fit-content;
-    background-color:pink ;
+    background-color:rgb(168, 38, 60) !important ;
 }
 .RMSHome__SubmitButton{
-    align-self: flex-end;
+    align-self: flex-start;
     width: fit-content;
-    background-color:#DC143C;
+    background-color:rgb(168, 38, 60) !important ;
+   
+}
+
+#RMSHome__Screen2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-left: 2.5%;
+    margin-top: 1.5%;
+}
+#RMSHome__leftslide{
+    width: 70%;
 }
 .RMSHome__Leftmenu_menulist{
-    width: 15rem;
+    width:40rem;
     height: 5rem;
     text-align: left;
     background-color: yellow;
 }
+.RMSHome__Screen2_FoodItemArea{
+    width: 100%;
+}
+
+.RMSHome__Screen2_searchbox{
+    width: 90%;
+    height: 0%;
+    border-color: black;
+      border-bottom: 1cm;
+}
+.RMSHome__Screen2_FoodItem_list{
+     top: 0%;
+     
+}
+.RMSHome__Screen2_FoodItem{
+    background-color: greenyellow;
+    width: 15rem;
+    height: 5rem;
+    text-align: left;
+    margin-left: 20%;
+}
+#RMSHome__KeyBoard{
+
+}
+
+

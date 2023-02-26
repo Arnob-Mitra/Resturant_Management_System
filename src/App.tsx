@@ -9,6 +9,7 @@ import FoodMainPage from './Page/FoodMainPage';
 import FoodHomeSearch from './FoodHomeSearchBar';
 import GenericHeader from './components/GenericHeader';
 import RMSHome from './components/RMSHome';
+import RMSTable from './components/RMSTable';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
     { path: '/b', element: <BasicInfo/> }, 
     { path: '/w', element: <GenericHeader/> }, 
     { path: '/rmshome', element: <RMSHome/> },  
+    { path: '/rmstable', element: <RMSTable/> },  
+
 
 
 
