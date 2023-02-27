@@ -21,16 +21,29 @@
     display: grid;
     grid-template-columns: auto auto;
     box-sizing: border-box ; 
-
 }
 .RMSHome__centerbox_topbox{
    box-sizing: border-box;
 }
 .RMSHome__centerbox_receipt{
-
+     width: 100%;
      box-sizing: border-box;
      border-style: dotted solid;    
 }
+
+.RMSHome__centerbox_receipt_itemName{
+    top: 15% ;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 #RMSHome_center__button{
     display: grid;
     grid-template-columns: auto auto;
@@ -66,6 +79,8 @@
     background-color: yellow;
 }
 .RMSHome__Screen2_FoodItemArea{
+    display: grid ;
+    grid-template-rows: 80% 20%;
     width: 100%;
 }
 
@@ -87,6 +102,8 @@
     margin-left: 20%;
 }
 #RMSHome__KeyBoard{
+  margin-top: 13%;
+  box-sizing: border-box;
 
 }
 

@@ -14,16 +14,12 @@ import RMSTable from './components/RMSTable';
 
 function App() {
   const router = createBrowserRouter([
-    { path: '/a', element: <FoodHomeSearch/> },
-    { path: '/', element: <GenericCard /> },
-    { path: '/f', element: <FoodMainPage/> },  
-    { path: '/c', element: <FoodMainFooter/> },  
+    { path: '/', element: <GenericCard /> }, 
     { path: '/s', element: <SignIn/> },  
     { path: '/l', element: <LogIn/> },  
-    { path: '/b', element: <BasicInfo/> }, 
-    { path: '/w', element: <GenericHeader/> }, 
+    { path: '/b', element: <BasicInfo/> },  
     { path: '/rmshome', element: <RMSHome/> },  
-    { path: '/rmstable', element: <RMSTable/> },  
+    
 
 
 

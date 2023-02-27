@@ -9,8 +9,7 @@ $margin: 0.7rem 0;
 
 #BasicInfo__Screen{
     text-align: center;
-    margin: 10%;
-    margin-top: 0%;
+    margin: auto 15%;
 }
 .BasicInfo_Title{
     margin: 1rem !important;
@@ -21,7 +20,6 @@ $margin: 0.7rem 0;
 
 #BasicInfo_GenderForm{
     margin-right: 80% !important;
-    margin-top: 1%;
 }
 
 .BasicInfo_GenderFormTitle{
@@ -36,23 +34,25 @@ $margin: 0.7rem 0;
 .BasicInfo__Skipbutton{
     align-self: flex-start;
     width: fit-content;
-    background-color:pink ;
+    background-color:rgb(130, 42, 56) !important ;
 }
 .BasicInfo__Continuebutton{
     align-self: flex-end;
     width: fit-content;
-    background-color:#DC143C;
+    background-color:#DC143C !important;
 }
 #BasicInfo__Screen2{
     text-align: center;
     background-color:rgba(220, 20, 60, 0.5) ;
     align-content: center;
 }
+.BasicInfoPage__Screen2Title{
+    margin-top: 20%;
+}
 .BasicInfo_TitleOfProduct{
     font-size: 500 !important;
 }
 .BasicInfo__Screen2Image{
-   width: 75%;
-   margin-top: 15%;
-   margin-left: 5%;
+   width: 80%;
+   margin-top: 5%;
 }

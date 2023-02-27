@@ -9,7 +9,6 @@ const RMSHome = () => {
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Order History</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Change Manager</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Ticket Note</Typography></button></Card>
-        <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Number of Guests</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Print All</Typography></button></Card>
       </div>
       <div id='RMSHome__centerbox'>
@@ -29,7 +28,7 @@ const RMSHome = () => {
           <Typography className='RMSHome__centerbox_topbox'>Select Waiter :
             <select name="plan" id="plan">
               <option value="01">Waiter.01</option>
-              <option value="02" selected>Waiter.02</option>
+              <option value="02">Waiter.02</option>
               <option value="03">Waiter.03</option>
               <option value="04">Waiter.04</option>
               <option value="04">Waiter.05</option>
@@ -39,7 +38,20 @@ const RMSHome = () => {
           <Typography className='RMSHome__centerbox_topbox'>Number of guests:  <input type="number" id="fname" name="fname"></input></Typography>
         </div>
         <div className='RMSHome__centerbox_receipt'>
-          <Typography className='RMSHome__centerbox_receipt_newOrder' variant='subtitle1'> New Order:</Typography>
+          <table>
+            <tr className='RMSHome__centerbox_receiptTitle'>
+              <th>Item Name</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Chocolate Icecream</td>
+              
+              <td>200</td>
+            </tr>
+          </table>
+
+
+
         </div>
         <div id="RMSHome_center__button">
           <Button variant='contained' className="RMSHome__CancelButton" >Cancel </Button>
@@ -56,32 +68,32 @@ const RMSHome = () => {
           <Card><button><Typography className='RMSHome__Leftmenu_menulist'>Food1</Typography></button></Card>
         </div>
 
-       <div className='RMSHome__Screen2_FoodItemArea'>
-     
-         <div className='RMSHome__Screen2_FoodItem_list'>
-         <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-        </div>
-        <div id='RMSHome__KeyBoard'>
-           <button>1</button>
-           <button>2</button>
-           <button>3</button>
-           <button>4</button>
-           <button>5</button>
-           <button>6</button>
-           <button>7</button>
-           <button>8</button>
-           <button>9</button>
-           <button>10</button>
+        <div className='RMSHome__Screen2_FoodItemArea'>
+
+          <div className='RMSHome__Screen2_FoodItem_list'>
+            <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+          </div>
+          <div id='RMSHome__KeyBoard'>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button><br />
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+
+          </div>
 
         </div>
-        </div>
-       </div>
-      
+      </div>
 
 
     </main>

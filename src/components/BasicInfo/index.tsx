@@ -53,9 +53,11 @@ const BasicInfo = () => {
       </div>
     </div>
        <div id="BasicInfo__Screen2">
+       <div className="BasicInfoPage__Screen2Title">
        <Typography variant="h6" className="BasicInfo_TitleOfProduct">Title of the Product</Typography>
        <Typography variant="subtitle1" className="BasicInfo_TitleOfProduct2">A Brief Discription</Typography>
        <img className="BasicInfo__Screen2Image" src="../../assets/resturant2.jpg" alt="" />
+      </div>
      </div>
    </main>
   )
