@@ -1,5 +1,5 @@
 @use "../../../styles/colors";
-$margin: 0.7rem 0;
+$margin: 0.5rem 0;
 
 #BasicInfo__wholeScreen{
     display: grid;
@@ -19,27 +19,29 @@ $margin: 0.7rem 0;
 }
 
 #BasicInfo_GenderForm{
-    margin-right: 80% !important;
+    text-align: left;
+    width: 100%;
 }
 
 .BasicInfo_GenderFormTitle{
     font-size: large;
+    text-align: left;
 }
 
 #BasicInfo__button{
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 7%;
+   
 }
 .BasicInfo__Skipbutton{
-    align-self: flex-start;
     width: fit-content;
     background-color:rgb(130, 42, 56) !important ;
+    justify-self: start;
 }
 .BasicInfo__Continuebutton{
-    align-self: flex-end;
     width: fit-content;
     background-color:#DC143C !important;
+    justify-self: end;
 }
 #BasicInfo__Screen2{
     text-align: center;

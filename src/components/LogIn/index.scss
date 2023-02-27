@@ -2,7 +2,7 @@
 
 $margin: 0.5rem 0;
 
-#LogInupPage__wholeScreen{
+#LogInPage__wholeScreen{
     display: grid;
     grid-template-columns: 50% auto;
     height: 100vh;
@@ -37,6 +37,7 @@ $margin: 0.5rem 0;
 }
 .LogInPage_socialmediaIcon{
     margin: $margin !important;
+
 }
 
 .LogInPage_BackToSignUp{

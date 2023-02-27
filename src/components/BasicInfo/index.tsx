@@ -34,8 +34,8 @@ const BasicInfo = () => {
         />
       </LocalizationProvider>
 
-      <FormControl id="BasicInfo_GenderForm" >
-        <FormLabel id="BasicInfo_GenderForm"><Typography variant="h6">Gender</Typography></FormLabel>
+      <FormControl id="BasicInfo_GenderForm">
+        <FormLabel ><Typography variant="h6">Gender</Typography></FormLabel>
         <RadioGroup
           row={true}
           name="row-radio-buttons-group"
@@ -48,14 +48,14 @@ const BasicInfo = () => {
       </FormControl>
       
       <div id="BasicInfo__button">
-        <Button variant='contained'  className="BasicInfo__Skipbutton" >Skip </Button>
+        <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
         <Button variant='contained' className="BasicInfo__Continuebutton" >Continue </Button>
       </div>
     </div>
        <div id="BasicInfo__Screen2">
        <div className="BasicInfoPage__Screen2Title">
-       <Typography variant="h6" className="BasicInfo_TitleOfProduct">Title of the Product</Typography>
-       <Typography variant="subtitle1" className="BasicInfo_TitleOfProduct2">A Brief Discription</Typography>
+       <Typography variant="h4" className="BasicInfo_TitleOfProduct">Title of the Product</Typography>
+       <Typography variant="h5" className="BasicInfo_TitleOfProduct2">A Brief Discription</Typography>
        <img className="BasicInfo__Screen2Image" src="../../assets/resturant2.jpg" alt="" />
       </div>
      </div>

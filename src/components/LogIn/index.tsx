@@ -6,7 +6,7 @@ import { Button, TextField, Typography } from "@mui/material";
 
 const LogIn = () => {
   return (
-    <main id="SignupPage__wholeScreen">
+    <main id="LogInPage__wholeScreen">
     <div id="LogInPage__Screen">
       <Typography variant="h5" className="LogInPage_Title">Log In To Your Account</Typography>
       <TextField fullWidth variant='outlined' label='Phone Number' required type='number' className='LogInPage_Textfield' />
