@@ -19,13 +19,6 @@ function App() {
     { path: '/l', element: <LogIn/> },  
     { path: '/b', element: <BasicInfo/> },  
     { path: '/rmshome', element: <RMSHome/> },  
-    
-
-
-
-
-
-
 
    ])
  
