@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss';
-import { Button, Typography, Card, TextField } from "@mui/material";
+import { Button, Typography, Card, TextField,Table,TableRow,TableCell } from "@mui/material";
 
 const RMSHome = () => {
   return (
@@ -9,7 +9,6 @@ const RMSHome = () => {
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Order History</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Change Manager</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Ticket Note</Typography></button></Card>
-        <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Number of Guests</Typography></button></Card>
         <Card><button><Typography className='RMSHome__Sidemenu_menulist'>Print All</Typography></button></Card>
       </div>
       <div id='RMSHome__centerbox'>
@@ -29,17 +28,23 @@ const RMSHome = () => {
           <Typography className='RMSHome__centerbox_topbox'>Select Waiter :
             <select name="plan" id="plan">
               <option value="01">Waiter.01</option>
-              <option value="02" selected>Waiter.02</option>
+              <option value="02">Waiter.02</option>
               <option value="03">Waiter.03</option>
               <option value="04">Waiter.04</option>
               <option value="04">Waiter.05</option>
               <option value="04">Waiter.06</option>
             </select>
           </Typography>
-          <Typography className='RMSHome__centerbox_topbox'>Number of guests:  <input type="number" id="fname" name="fname"></input></Typography>
+          <Typography className='RMSHome__centerbox_topbox'>Guests:  <input  type="number" id="fname" name="fname" ></input></Typography>
         </div>
         <div className='RMSHome__centerbox_receipt'>
-          <Typography className='RMSHome__centerbox_receipt_newOrder' variant='subtitle1'> New Order:</Typography>
+          <Table>
+            <TableRow>
+            <TableCell align="left">Item Name</TableCell>
+            <TableCell align="center">Qantity</TableCell>
+            <TableCell align="right">Price</TableCell>
+            </TableRow>
+          </Table>
         </div>
         <div id="RMSHome_center__button">
           <Button variant='contained' className="RMSHome__CancelButton" >Cancel </Button>
@@ -55,33 +60,33 @@ const RMSHome = () => {
           <Card><button><Typography className='RMSHome__Leftmenu_menulist'>Food1</Typography></button></Card>
           <Card><button><Typography className='RMSHome__Leftmenu_menulist'>Food1</Typography></button></Card>
         </div>
+        
+        <div className='RMSHome__Screen2_FoodItemArea'>
+        <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
+          <div className='RMSHome__Screen2_FoodItem_list'>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+          </div>  
+          <div id='RMSHome__KeyBoard'>
+          <button className='keyboardNumber'>1</button>
+          <button  className='keyboardNumber'>2</button>
+          <button  className='keyboardNumber' >3</button>
+          <button  className='keyboardNumber' >4</button>
+          <button  className='keyboardNumber' >5</button>
+          <button  className='keyboardNumber' >6</button><br/>
+          <button  className='keyboardNumber' >7</button>
+          <button  className='keyboardNumber' >8</button>
+          <button  className='keyboardNumber' >9</button>
+          <button  className='keyboardNumber' >0</button>
+          <button  className='keyboardNumber' >,</button>
+          <button  className='keyboardNumber' >X</button>
+        </div>
 
-       <div className='RMSHome__Screen2_FoodItemArea'>
-     
-         <div className='RMSHome__Screen2_FoodItem_list'>
-         <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-        </div>
-        <div id='RMSHome__KeyBoard'>
-           <button>1</button>
-           <button>2</button>
-           <button>3</button>
-           <button>4</button>
-           <button>5</button>
-           <button>6</button>
-           <button>7</button>
-           <button>8</button>
-           <button>9</button>
-           <button>10</button>
-
-        </div>
-        </div>
-       </div>
-      
+        </div>      
+      </div>
 
 
     </main>

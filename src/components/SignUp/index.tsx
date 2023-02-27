@@ -19,9 +19,11 @@ const SignIn = () => {
       </div>
 
       <div id="SignUpPage__Screen2">
-        <Typography variant="h6" className="SignUpPage_TitleOfProduct">Title of the Product</Typography>
-        <Typography variant="subtitle1" className="SignUpPage_TitleOfProduct2">A Brief Discription</Typography>
+        <div className="SignUpPage__Screen2Title">
+        <Typography variant="h4" className="SignUpPage_TitleOfProduct">Title of the Product</Typography>
+        <Typography variant="h5" className="SignUpPage_TitleOfProduct2">A Brief Discription</Typography>
         <img className="SignUpPage__Screen2Image" src="../../assets/resturant2.jpg" alt="" />
+      </div>
       </div>
     </main>
 
