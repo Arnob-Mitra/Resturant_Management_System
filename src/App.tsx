@@ -23,15 +23,8 @@ function App() {
     { path: '/b', element: <BasicInfo/> }, 
     { path: '/w', element: <GenericHeader/> }, 
     { path: '/rmshome', element: <RMSHome/> },  
-    { path: '/rmstable', element: <RMSTable/> },  
-
-
-
-
-
-
-
-   ])
+    { path: '/rmstable', element: <RMSTable/> },
+  ])
  
   return (
     <RouterProvider router={router} />
