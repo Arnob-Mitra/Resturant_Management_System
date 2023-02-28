@@ -20,11 +20,11 @@ const GenericCard = () => {
             <header>
                 <div className='GenericCardHeader__Screen'>
                     <img className="GenericCardHeader__Image" src='../../assets/frontimage.jpg' loading="lazy" alt='' />
-                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src ="../../assets/shareIcon.png"/></a>
+                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src ="../../assets/sharenew.png"/></a>
                 </div>
             </header>
 
-                <h2 className='GenericCardHeader__ResturantName'>Resturant Name</h2>
+                <h1 className='GenericCardHeader__ResturantName'>Resturant Name</h1>
                 <div className='GenericCardHeader__Resturant'>
                 <div className='GenericCardHeader__location'>Location</div>
                 <p className='GenericCardHeader__Review'>Reviews & info</p>
@@ -49,8 +49,8 @@ const GenericCard = () => {
                         <Fragment key={index} >
                             <div className='GenericCard__Screen'>
                                 <div className='GenericCard__ProductDetails'>
-                                    <h3 className='GenericCard__Title' >{product.title}</h3>
-                                    <h4 className='GenericCard__Description'  >{product.description}</h4>
+                                    <h2 className='GenericCard__Title' >{product.title}</h2>
+                                    <h3 className='GenericCard__Description'  >{product.description}</h3>
                                 </div>
                                 <img className="GenericCard__Image" src={product.thumb} loading="lazy" alt='' />
                                 <h4 className="GenericCard__Price" >{product.price}</h4>
@@ -66,9 +66,7 @@ const GenericCard = () => {
                 }
             </main>
             <footer className="GenericCard__footer-content">
-                <div className='footer-content__Price'>
-                    <h3 className='footer-content__viewyourcart'>View your cart &nbsp; &nbsp; &nbsp; &nbsp; Tk. 200 </h3>
-                </div>
+                <h3 className='footer-content__viewyourcart'>View your cart &nbsp; &nbsp; &nbsp; &nbsp; Tk. 200 </h3>
             </footer>
         </Fragment>
     )
