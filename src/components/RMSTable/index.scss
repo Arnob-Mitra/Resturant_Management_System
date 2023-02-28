@@ -1,3 +1,34 @@
 #RMSTable__Screen{
-    
+  display: grid;
+  grid-template-rows: 15% 85%;
+  margin: 2%;
 }
+.RMSTabele__Header{
+   display: grid;
+   grid-template-columns: 33% 33% 33%;
+   height: 10rem;
+}
+.RMSTable_HeaderButtons{
+    width: 24rem;
+    height: 2.5rem;
+    background-color: antiquewhite;
+}
+
+.RMSTable_MainButton{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    box-sizing: border-box;
+    width: 75rem;
+    height: 15rem;
+    text-align: center !important;
+  }
+
+  .RMSTable_Buttons{
+    background-color: rgba(70, 200, 50, 0.8);
+    border: rgba(70, 200, 50, 0.8);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem !important;
+  }
+

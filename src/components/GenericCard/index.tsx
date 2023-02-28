@@ -20,11 +20,12 @@ const GenericCard = () => {
             <header>
                 <div className='GenericCardHeader__Screen'>
                     <img className="GenericCardHeader__Image" src='../../assets/frontimage.jpg' loading="lazy" alt='' />
-                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src ="../../assets/sharenew.png"/></a>
+                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src ="../../assets/share_icon.png"/></a>
+                    <h1 className='GenericCardHeader__ResturantName'>Resturant Name</h1>
                 </div>
             </header>
 
-                <h1 className='GenericCardHeader__ResturantName'>Resturant Name</h1>
+                
                 <div className='GenericCardHeader__Resturant'>
                 <div className='GenericCardHeader__location'>Location</div>
                 <p className='GenericCardHeader__Review'>Reviews & info</p>
