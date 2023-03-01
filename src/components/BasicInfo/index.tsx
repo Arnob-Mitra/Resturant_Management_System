@@ -49,7 +49,7 @@ const BasicInfo = () => {
       
       <div id="BasicInfo__button">
         <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
-        <Button variant='contained' className="BasicInfo__Continuebutton" >Continue </Button>
+        <Button variant='contained' className="BasicInfo__Continuebutton" ><a href="/rmsTable">Continue</a> </Button>
       </div>
     </div>
        <div id="BasicInfo__Screen2">

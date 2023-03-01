@@ -9,7 +9,7 @@ const LogIn = () => {
     <main id="LogInPage__wholeScreen">
     <div id="LogInPage__Screen">
       <Typography variant="h4" className="LogInPage_Title">Log In To Your Account</Typography>
-      <TextField fullWidth variant='outlined' label='Phone Number' required type='number' className='LogInPage_Textfield' />
+      <TextField fullWidth variant='outlined' label='Email Address' required type='email' className='LogInPage_Textfield' />
       <TextField fullWidth variant='outlined' label='Password' required type='password' className='LogInPage_Textfield' />
       <a href="/"><Typography className="LogInPage_ForgotPassword">Forgot Password?</Typography></a> 
       <Button variant='contained' id="LogInPage__button" >Log In</Button>
