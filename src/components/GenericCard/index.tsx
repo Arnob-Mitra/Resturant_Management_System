@@ -20,16 +20,14 @@ const GenericCard = () => {
             <header>
                 <div className='GenericCardHeader__Screen'>
                     <img className="GenericCardHeader__Image" src='../../assets/frontimage.jpg' loading="lazy" alt='' />
-                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src ="../../assets/share_icon.png"/></a>
+                    <a href="/share"> <img className="GenericCardHeader__ShareIcon" src="../../assets/share_icon.png" /></a>
                     <h1 className='GenericCardHeader__ResturantName'>Resturant Name</h1>
                 </div>
             </header>
-
-                
-                <div className='GenericCardHeader__Resturant'>
+            <div className='GenericCardHeader__Resturant'>
                 <div className='GenericCardHeader__location'>Location</div>
                 <p className='GenericCardHeader__Review'>Reviews & info</p>
-                 <div className='GenericCardHeader__rating'>
+                <div className='GenericCardHeader__rating'>
                     <p>Rating</p>
                     <input type="radio" name='rating1' id='rating1'></input>
                     <label className='fa fa-star'></label>
@@ -44,9 +42,18 @@ const GenericCard = () => {
                 </div>
                 <p className='GenericCardHeader__MoreImages'>More Images</p>
             </div>
-           <main id='GenericCardHeader__MenuCard'>
+
+            <div className="GenericCard_menunav">
+                <a href="#home">Rice</a>
+                <a href="#news">Chicken</a>
+                <a href="#contact">Burger</a>
+                <a href="#about">Pizza</a>
+                <a href="#about">Pasta</a>
+
+            </div>
+            <main id='GenericCardHeader__MenuCard'>
                 {
-                 products.map((product, index) => (
+                    products.map((product, index) => (
                         <Fragment key={index} >
                             <div className='GenericCard__Screen'>
                                 <div className='GenericCard__ProductDetails'>
