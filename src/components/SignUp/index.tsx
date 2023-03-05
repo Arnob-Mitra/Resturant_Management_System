@@ -12,7 +12,7 @@ const SignIn = () => {
         <TextField fullWidth variant='outlined' label='Email Address' required type='email' className='SignUpPage_Textfield' />
         <TextField fullWidth variant='outlined' label='Password' required type='password' className='SignUpPage_Textfield' />
         <TextField fullWidth variant='outlined' label='Confirm Password' required type='password' className='SignUpPage_Textfield' />
-        <Button variant='contained' id="SignUpPage__button" ><a href="/b">Sign In</a></Button>
+        <Button variant='contained' id="SignUpPage__button" ><a className="ButtonSingUptoBasicInfo" href="/b">Sign In</a></Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/googleIcon.png" alt="" />Sign Up with Google</Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/facebookIcon.png" alt="" />Sign Up with facebook</Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/instagramIcon.png" alt="" />Sign Up with Instagram</Button>

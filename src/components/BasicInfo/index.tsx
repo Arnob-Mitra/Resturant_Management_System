@@ -18,8 +18,6 @@ const BasicInfo = () => {
     <div id="BasicInfo__Screen">
       <Typography variant="h4" className="BasicInfo_Title">Basic Info</Typography>
       <TextField fullWidth variant='outlined' label='Full Name'  className='BasicInfo_TextField' />
-      <TextField fullWidth variant='outlined' label='Email Address' type='email' className='BasicInfo_TextField' />
-
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
           className='BasicInfo_TextField'
@@ -49,7 +47,7 @@ const BasicInfo = () => {
       
       <div id="BasicInfo__button">
         <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
-        <Button variant='contained' className="BasicInfo__Continuebutton" ><a href="/rmsTable">Continue</a> </Button>
+        <Button variant='contained' className="BasicInfo__Continuebutton" ><a className="BasicInfoContinueButton" href="/rmsTable">Continue</a> </Button>
       </div>
     </div>
        <div id="BasicInfo__Screen2">

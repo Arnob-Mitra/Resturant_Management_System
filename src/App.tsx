@@ -6,6 +6,7 @@ import LogIn from './components/LogIn';
 import SignIn from './components/SignUp';
 import RMSHome from './components/RMSHome';
 import RMSTable from './components/RMSTable';
+import ForgetPassword from './components/ForgetPassword';
 
 
 
@@ -16,7 +17,9 @@ function App() {
     { path: '/l', element: <LogIn/> },  
     { path: '/b', element: <BasicInfo/> },  
     { path: '/rmshome', element: <RMSHome/> }, 
-    { path: '/rmstable', element: <RMSTable/> },  
+    { path: '/rmstable', element: <RMSTable/> }, 
+    { path: '/forgetpass', element: <ForgetPassword/> },  
+
 
 
    ])
