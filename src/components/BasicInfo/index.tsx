@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './index.scss';
 import { Button, TextField, Typography, } from "@mui/material";
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
@@ -11,13 +11,23 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
-const BasicInfo = () => {
+function BasicInfo () {
+  const [name, setName] = useState('');
+
+
+  const nameHandler = (event: any) => {
+		setName(event.target.value);
+	}
+  const basicInfo = async (event: any) => {
+  }
+
   const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'));
   return (
     <main id= "BasicInfo__wholeScreen">
-    <div id="BasicInfo__Screen">
+    <form id="BasicInfo__Screen" onSubmit={basicInfo}>
       <Typography variant="h4" className="BasicInfo_Title">Basic Info</Typography>
-      <TextField fullWidth variant='outlined' label='Full Name'  className='BasicInfo_TextField' />
+      <TextField fullWidth variant='outlined' label='Full Name'  
+      className='BasicInfo_TextField' value={name} onChange={nameHandler}  />
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
           className='BasicInfo_TextField'
@@ -49,7 +59,7 @@ const BasicInfo = () => {
         <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
         <Button variant='contained' className="BasicInfo__Continuebutton" ><a className="BasicInfoContinueButton" href="/rmsTable">Continue</a> </Button>
       </div>
-    </div>
+    </form>
        <div id="BasicInfo__Screen2">
        <div className="BasicInfoPage__Screen2Title">
        <Typography variant="h4" className="BasicInfo_TitleOfProduct">Title of the Product</Typography>
