@@ -13,8 +13,6 @@ import FormLabel from '@mui/material/FormLabel';
 
 function BasicInfo () {
   const [name, setName] = useState('');
-
-
   const nameHandler = (event: any) => {
 		setName(event.target.value);
 	}

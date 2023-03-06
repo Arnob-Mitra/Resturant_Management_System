@@ -10,6 +10,17 @@ function SignIn() {
   const [password, setPwd] = useState('');
 
   const signin = async (event: any) => {
+    event.preventDefault()
+
+    fetch("http://127.0.0.1:8000/api/v1/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": 'application/json',
+      },
+      body: JSON.stringify({email,password}),
+    })
+    .then((response) => response.json())
+    .then((response) => console.log(response));
   }
 
   const emailHandler = (event: any) => {
@@ -55,18 +66,11 @@ function SignIn() {
     }
   }
 
-  // setLoading(true);
-  // fetchData('/user'; {
-  //   'Content-Type': 'application/json',
-  // },
-  // JSON.stringify({
-  //   email,
-  //   password,
-  // }
-
-  // )
-
-  return (
+  async function postData(url = "", data = {}) {
+    
+  }
+  
+ return (
     <main id="SignupPage__wholeScreen">
       <form id="SignUpPage__Screen" onSubmit={signin}>
         <Typography variant="h4" className="SignUpPage_Title">Create New Account</Typography>
@@ -76,7 +80,7 @@ function SignIn() {
           className='SignUpPage_Textfield' value={password} onChange={pwdHandler} error={pwdError} />
         <TextField fullWidth variant='outlined' label='Confirm Password' required type='password'
           className='SignUpPage_Textfield' value={cpwd} onChange={cPwdHandler} error={cPwdError} helperText={cPwdError ? cPwdHelperText : ''} onBlur={cPwdBlurHandler} />
-        <Button variant='contained' id="SignUpPage__button" ><a className="ButtonSingUptoBasicInfo" href="/b">Sign In</a></Button>
+        <Button variant='contained' id="SignUpPage__button" type="submit" >Sign In</Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/googleIcon.png" alt="" />Sign Up with Google</Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/facebookIcon.png" alt="" />Sign Up with facebook</Button>
         <Button variant='outlined' className="SignupPage_socialmediaIcon"> <img className="socialImage" src="../../assets/instagramIcon.png" alt="" />Sign Up with Instagram</Button>

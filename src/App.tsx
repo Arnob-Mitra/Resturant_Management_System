@@ -2,11 +2,11 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import GenericCard from './components/GenericCard';
 import BasicInfo from './components/BasicInfo';
-import LogIn from './components/LogIn';
 import SignIn from './components/SignUp';
 import RMSHome from './components/RMSHome';
 import RMSTable from './components/RMSTable';
 import ForgetPassword from './components/ForgetPassword';
+import LogIn from './components/LogIn';
 
 
 
