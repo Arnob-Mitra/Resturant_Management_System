@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.scss';
-import { Button, Typography, Card, TextField,Table,TableRow,TableCell } from "@mui/material";
+import { Button, Typography, Card, TextField, Table, TableRow, TableCell } from "@mui/material";
 
 const RMSHome = () => {
   return (
@@ -35,14 +35,14 @@ const RMSHome = () => {
               <option value="04">Waiter.06</option>
             </select>
           </Typography>
-          <Typography className='RMSHome__centerbox_topbox'>Guests:  <input  type="number" id="fname" name="fname" ></input></Typography>
+          <Typography className='RMSHome__centerbox_topbox'>Guests:  <input type="number" id="fname" name="fname" ></input></Typography>
         </div>
         <div className='RMSHome__centerbox_receipt'>
           <Table>
             <TableRow>
-            <TableCell align="left">Item Name</TableCell>
-            <TableCell align="center">Qantity</TableCell>
-            <TableCell align="right">Price</TableCell>
+              <TableCell align="left">Item Name</TableCell>
+              <TableCell align="center">Qantity</TableCell>
+              <TableCell align="right">Price</TableCell>
             </TableRow>
           </Table>
         </div>
@@ -60,32 +60,32 @@ const RMSHome = () => {
           <Card><button><Typography className='RMSHome__Leftmenu_menulist'>Food1</Typography></button></Card>
           <Card><button><Typography className='RMSHome__Leftmenu_menulist'>Food1</Typography></button></Card>
         </div>
-        
-        <div className='RMSHome__Screen2_FoodItemArea'>
-        <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
-          <div className='RMSHome__Screen2_FoodItem_list'>
-            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
-          </div>  
-          <div id='RMSHome__KeyBoard'>
-          <button className='keyboardNumber'>1</button>
-          <button  className='keyboardNumber'>2</button>
-          <button  className='keyboardNumber' >3</button>
-          <button  className='keyboardNumber' >4</button>
-          <button  className='keyboardNumber' >5</button>
-          <button  className='keyboardNumber' >6</button><br/>
-          <button  className='keyboardNumber' >7</button>
-          <button  className='keyboardNumber' >8</button>
-          <button  className='keyboardNumber' >9</button>
-          <button  className='keyboardNumber' >0</button>
-          <button  className='keyboardNumber' >,</button>
-          <button  className='keyboardNumber' >X</button>
-        </div>
 
-        </div>      
+        <div className='RMSHome__Screen2_FoodItemArea'>
+          <TextField size='small' className='RMSHome__Screen2_searchbox'></TextField>
+          <div className='RMSHome__Screen2_FoodItem_list'>
+            <button><Typography className='RMSHome__Screen2_FoodItem' >Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+            <button><Typography className='RMSHome__Screen2_FoodItem'>Food1</Typography></button>
+          </div>
+          <div id='RMSHome__KeyBoard'>
+            <button className='keyboardNumber'>1</button>
+            <button className='keyboardNumber'>2</button>
+            <button className='keyboardNumber' >3</button>
+            <button className='keyboardNumber' >4</button>
+            <button className='keyboardNumber' >5</button>
+            <button className='keyboardNumber' >6</button><br />
+            <button className='keyboardNumber' >7</button>
+            <button className='keyboardNumber' >8</button>
+            <button className='keyboardNumber' >9</button>
+            <button className='keyboardNumber' >0</button>
+            <button className='keyboardNumber' >,</button>
+            <button className='keyboardNumber' >X</button>
+          </div>
+
+        </div>
       </div>
 
 

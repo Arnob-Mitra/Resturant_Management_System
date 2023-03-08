@@ -1,111 +1,134 @@
 .GenericCardHeader__Image{
-  width: 100%;
-  height: 10rem;
-  box-shadow: 2px 5px  #d3d3d3;
-}
-.GenericCardHeader__ShareIcon{
-   position: absolute;
-   top: 2%;
-   left: 88%;
-   height: 3.5%;
-   border-radius: 50% ;
-   background-color: white;
-}
-.GenericCardHeader__ResturantName{
-    font-weight: 790 !important;
-    position: absolute;
-    text-shadow: 0.2px 0.2px;
-    top: 8%;
-    right: 24%;
-    height: 8%;
-    color: white;
-}
-.GenericCardHeader__Resturant{
-    border-bottom: solid #d3d3d3 0.02rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 0.5rem; 
-}
-.GenericCardHeader__location{
-    margin-right:20%;
-}
-.GenericCardHeader__Review{
-    margin-left: 40%;
-    margin-top: 5%;
-    color: rgb(146, 61, 75);
-}
-.GenericCardHeader__MoreImages{
-    margin-left: 45%;
-    margin-top:5%;
-}
-.GenericCard__Screen{
-    display: grid;
-    grid-template-columns: 65% 35%;
-    box-sizing: border-box ;
-    border-bottom: solid #d3d3d3 0.05rem;  
-    padding: 1%;
-}
-#GenericCardHeader__MenuCard{
-   
-    margin-left: 1.5%;
-}
-.GenericCard__ProductDetails{
-    width: 100% ;    
-}
-.GenericCard__Title{
- 
-}
-
-.GenericCard__Image{
-    height: 5.5rem;
-    max-width: 90%;
-    margin: auto;
-}
-
-.GenericCard__Description{
-    font-size: small;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.GenericCard__button{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto;        
-    margin-top: 4%;
-    margin-right: 15%;
-    gap: 1rem;
-}
-
-.GenericCard__Description,
-.GenericCard__Price{
-    font-weight: 400 !important;
-    margin: 0 !important;
-}
-
-.GenericCard__DecrementIcon{
-    border-radius: 50%;
-    height:19px;
-}
-
-.GenericCard__IncrementIcon{
-    border-radius: 50%;
-    height:19px;    
-}
-
-.GenericCard__CounterText{
-    margin: 0 !important;
-}
-.GenericCard__footer-content{
-    position: fixed !important;
-    bottom: 0pt;
     width: 100%;
-    background-color: rgb(149, 150, 215);
+    height: 10rem;
+    box-shadow: 2px 5px  #d3d3d3;
+  }
+  .GenericCardHeader__ShareIcon{
+     position: absolute;
+    top: 3%;
+     left: 88%;
+     height: 4.5%;
+     border-radius: 50% ;
+     background-color: rgb(255, 255, 255);
+  }
+  .GenericCardHeader__ResturantName{
+      font-weight: 790 !important;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0.2px 0.2px;
+      top: 8%;
+      right: 24%;
+      height: 8%;
+      color: white;
+  }
+  .GenericCardHeader__Resturant{
+      border-bottom: solid #d3d3d3 0.02rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      padding: 0.5rem; 
+  }
+  .GenericCardHeader__location{
+      margin-right:20%;
+  }
+  .GenericCardHeader__Review{
+      margin-left: 40%;
+      margin-top: 5%;
+      color: rgb(146, 61, 75);
+  }
+  .GenericCardHeader__MoreImages{
+      margin-left: 45%;
+      margin-top:5%;
+  }
+
+  .GenericCard_menunav {
+    overflow: hidden;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .GenericCard_menunav a {
+    float: left;
+    color: black;
     text-align: center;
-    border-radius: 2%;    
-}
-.footer-content__viewyourcart{
-   
-}
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .GenericCard_menunav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+
+  #GenericCardHeader__MenuCard{
+    margin-left: 1.5%;
+    margin-bottom: 20%;
+ }
+  .GenericCard__Screen{
+      display: grid;
+      grid-template-columns: 65% 35%;
+      box-sizing: border-box ;
+      border-bottom: solid #d3d3d3 0.05rem;  
+  }
+ 
+  .GenericCard__ProductDetails{
+      width: 100% ;    
+  }
+  
+  .GenericCard__Image{
+      height: 5rem;
+      width: 8rem;
+      margin: auto;
+  }
+  
+  .GenericCard__Description{
+      font-size: small;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  .GenericCard__button{
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto auto auto;        
+      margin-top: 4%;
+      margin-right: 15%;
+      gap: 1rem;
+  }
+  
+  .GenericCard__Description,
+  .GenericCard__Price{
+      font-weight: 400 !important;
+      margin: 0 !important;
+  }
+  
+  .GenericCard__DecrementIcon{
+      border-radius: 50%;
+      height:19px;
+  }
+  
+  .GenericCard__IncrementIcon{
+      border-radius: 50%;
+      height:19px;    
+  }
+  
+  .GenericCard__CounterText{
+      margin: 0 !important;
+  }
+  .GenericCard__footer-content{
+      position: fixed !important;
+      bottom: 0pt;
+      height: 6%;
+      width: 100%;
+      background-color: rgb(149, 150, 215);
+      text-align: center;
+      border-radius: 2%;    
+  }
+ 
+  
+  
+  
 
 
 

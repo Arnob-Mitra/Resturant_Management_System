@@ -5,9 +5,12 @@ $margin: 0.5rem 0;
 #SignupPage__wholeScreen{
     display: grid;
     grid-template-columns: 50% auto;
+    @media (max-width: 768px) {
+        grid-template-columns: 100%;
+    }
     height: 100vh;
-
 }
+
 #SignUpPage__Screen{
     text-align: center;
     margin: auto 15%;
@@ -28,6 +31,10 @@ $margin: 0.5rem 0;
   margin: 2rem auto;
   background-color:#DC143C ;
 }
+.ButtonSingUptoBasicInfo{
+    color:#FFFFFF;
+    text-decoration: none
+}
 
 .SignupPage_socialmediaIcon{
    margin: $margin !important;
@@ -36,6 +43,9 @@ $margin: 0.5rem 0;
 #SignUpPage__Screen2{   
     text-align: center;
     background-color:rgba(220, 20, 60, 0.5) ;
+    @media only screen and (max-width: 786px) {
+        display: none;
+  }
 }
 .SignUpPage__Screen2Title{
     margin-top: 20%;
