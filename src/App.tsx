@@ -16,6 +16,7 @@ function App() {
     { path: '/s', element: <SignIn/> },  
     { path: '/l', element: <LogIn/> },  
     { path: '/b', element: <BasicInfo/> },  
+    { path: '/b/:userId', element: <BasicInfo/> },  
     { path: '/rmshome', element: <RMSHome/> }, 
     { path: '/rmstable', element: <RMSTable/> }, 
     { path: '/forgetpass', element: <ForgetPassword/> },  

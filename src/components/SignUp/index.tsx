@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './index.scss';
+import { useNavigate } from "react-router-dom";
 import { Button, TextField, Typography } from "@mui/material";
 import XRegExp from 'xregexp';
 
@@ -8,6 +9,7 @@ function SignIn() {
 
   const [email, setEmail] = useState('');
   const [password, setPwd] = useState('');
+  const navigate = useNavigate();
 
   const signin = async (event: any) => {
     event.preventDefault()
@@ -17,10 +19,18 @@ function SignIn() {
       headers: {
         "Content-Type": 'application/json',
       },
-      body: JSON.stringify({email,password}),
+
+      body: JSON.stringify({ email, password, 'user_type': 'restaurant' }),
     })
-    .then((response) => response.json())
-    .then((response) => console.log(response));
+      .then((response) => {
+        return response.json()
+      })
+
+      .then((data) => {
+        localStorage.setItem('access', data.data.access);
+        localStorage.setItem('refresh', data.data.refresh);
+        navigate(`/b/${data.data.user._id}`)
+      });
   }
 
   const emailHandler = (event: any) => {
@@ -67,10 +77,9 @@ function SignIn() {
   }
 
   async function postData(url = "", data = {}) {
-    
   }
-  
- return (
+
+  return (
     <main id="SignupPage__wholeScreen">
       <form id="SignUpPage__Screen" onSubmit={signin}>
         <Typography variant="h4" className="SignUpPage_Title">Create New Account</Typography>
@@ -102,4 +111,6 @@ function SignIn() {
 export default SignIn;
 
 
+
+  
 

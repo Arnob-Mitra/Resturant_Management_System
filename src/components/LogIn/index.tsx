@@ -7,13 +7,6 @@ function LogIn() {
   const [email, setEmail] = useState('');
   const [password, setPwd] = useState('');
 
-  const emailHandler = (event: any) => {
-    setEmail(event.target.value);
-  }
-  const passwordHandler = (event: any) => {
-    setPwd(event.target.value);
-  }
-
   const login = async (event: any) => {
     event.preventDefault()
 
@@ -24,9 +17,25 @@ function LogIn() {
       },
       body: JSON.stringify({email,password}),
     })
-    .then((response) => response.json())
-    .then((response) => console.log(response));
+    .then((response) => {
+      return response.json()
+    })
+    .then((data) => {
+      localStorage.setItem('access', data.data.access);
+      localStorage.setItem('refresh', data.data.refresh);
+      console.log(data);
+    });
   }
+
+
+  const emailHandler = (event: any) => {
+    setEmail(event.target.value);
+  }
+  const pwdHandler = (event: any) => {
+    setPwd(event.target.value);
+  }
+
+ 
 
   return (
     <main id="LogInPage__wholeScreen">
@@ -35,7 +44,7 @@ function LogIn() {
         <TextField fullWidth variant='outlined' label='Email Address' required type='email' className='LogInPage_Textfield'
           value={email} onChange={emailHandler} />
         <TextField fullWidth variant='outlined' label='Password' required type='password' className='LogInPage_Textfield'
-          value={password} onChange={passwordHandler} />
+          value={password} onChange={pwdHandler} />
 
         <a href="/"><Typography className="LogInPage_ForgotPassword"><a className="LogInToForgetPassButton" href="/forgetpass">Forgot Password?</a></Typography></a>
         <Button variant='contained' id="LogInPage__button" >Log In</Button>

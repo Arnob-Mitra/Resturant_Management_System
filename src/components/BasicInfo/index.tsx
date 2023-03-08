@@ -10,13 +10,38 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import { useParams } from "react-router-dom";
 
 function BasicInfo () {
+  const { userId } = useParams();
+  console.log(userId);
   const [name, setName] = useState('');
   const nameHandler = (event: any) => {
 		setName(event.target.value);
 	}
   const basicInfo = async (event: any) => {
+    event.preventDefault()
+
+    fetch("http://127.0.0.1:8000/api/v1/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": 'application/json',
+        "Authorization" : `Bearer ${localStorage.getItem('access')}`
+      },
+
+      body: JSON.stringify({ name, value }),
+    })
+      .then((response) => {
+        return response.json()
+      })
+
+      .then((data) => {
+        localStorage.setItem('access', data.data.access);
+        localStorage.setItem('refresh', data.data.refresh);
+        console.log(data);
+        
+      });
+  
   }
 
   const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'));
@@ -27,6 +52,7 @@ function BasicInfo () {
       <TextField fullWidth variant='outlined' label='Full Name'  
       className='BasicInfo_TextField' value={name} onChange={nameHandler}  />
       <LocalizationProvider dateAdapter={AdapterDayjs}>
+        
         <DatePicker
           className='BasicInfo_TextField'
           label="Date of Birth"
@@ -55,7 +81,7 @@ function BasicInfo () {
       
       <div id="BasicInfo__button">
         <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
-        <Button variant='contained' className="BasicInfo__Continuebutton" ><a className="BasicInfoContinueButton" href="/rmsTable">Continue</a> </Button>
+        <Button variant='contained' className="BasicInfo__Continuebutton" > Continue </Button>
       </div>
     </form>
        <div id="BasicInfo__Screen2">
