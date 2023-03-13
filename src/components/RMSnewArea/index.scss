@@ -1,0 +1,29 @@
+#RMSnewArea__WholeScreen{
+margin-top: 3rem ;
+margin-left: 5rem;
+}
+
+#RMSnewarea__button{
+    display: block;
+  margin-left: 50rem  ;
+  margin-bottom: 3rem;
+  background-color:#DC143C ;
+
+
+}
+
+.newAreabutton__color{
+  color:#FFFFFF;
+  text-decoration: none
+}
+
+.RMSnewArea_MainButton{
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    box-sizing: border-box;
+    width: 60rem;
+    height: 25rem;
+    text-align: left !important;
+    gap: 2rem; 
+    margin-left: 5rem !important; 
+}

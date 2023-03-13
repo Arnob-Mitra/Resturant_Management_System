@@ -29,7 +29,7 @@ function SignIn() {
       .then((data) => {
         localStorage.setItem('access', data.data.access);
         localStorage.setItem('refresh', data.data.refresh);
-        navigate(`/b/${data.data.user._id}`)
+        navigate('/b')
       });
   }
 

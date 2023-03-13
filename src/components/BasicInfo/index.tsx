@@ -10,19 +10,21 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 function BasicInfo () {
-  const { userId } = useParams();
-  console.log(userId);
+   const { userId } = useParams();
+   console.log(userId);
   const [name, setName] = useState('');
   const nameHandler = (event: any) => {
 		setName(event.target.value);
-	}
+  }
+  const navigate = useNavigate();
   const basicInfo = async (event: any) => {
     event.preventDefault()
 
-    fetch("http://127.0.0.1:8000/api/v1/user", {
+    fetch("http://127.0.0.1:8000/api/v1", {
       method: "POST",
       headers: {
         "Content-Type": 'application/json',
@@ -39,12 +41,11 @@ function BasicInfo () {
         localStorage.setItem('access', data.data.access);
         localStorage.setItem('refresh', data.data.refresh);
         console.log(data);
-        
+        navigate('/')
       });
-  
   }
 
-  const [value, setValue] = React.useState<Dayjs | null>(dayjs('2022-04-07'));
+  const [value, setValue] = React.useState<Dayjs | null>(dayjs('2001-04-07'));
   return (
     <main id= "BasicInfo__wholeScreen">
     <form id="BasicInfo__Screen" onSubmit={basicInfo}>

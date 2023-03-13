@@ -35,8 +35,6 @@ function LogIn() {
     setPwd(event.target.value);
   }
 
- 
-
   return (
     <main id="LogInPage__wholeScreen">
       <form id="LogInPage__Screen" onSubmit={login}>
