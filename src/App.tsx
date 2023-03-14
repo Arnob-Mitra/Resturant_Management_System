@@ -1,15 +1,15 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import GenericCard from './components/GenericCard';
-import BasicInfo from './components/BasicInfo';
-import SignIn from './components/SignUp';
-import RMSHome from './components/RMSHome';
+import BasicInfo from './Page/BasicInfo';
+import SignIn from './Page/SignUp';
+import RMSHome from './Page/RMSHome';
 import RMSTable from './components/RMSTable';
 import ForgetPassword from './components/ForgetPassword';
-import LogIn from './components/LogIn';
+import LogIn from './Page/LogIn';
 import RMSnewArea from './components/RMSnewArea';
 import RMSNavbar from './components/RMSNavbar';
-import ModalResturant from './ModalResturant';
+import ModalResturant from './components/ModalResturant';
 
 
 
