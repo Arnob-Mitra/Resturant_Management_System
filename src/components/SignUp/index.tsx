@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './index.scss';
 import { useNavigate } from "react-router-dom";
 import { Button, TextField, Typography } from "@mui/material";
-import XRegExp from 'xregexp';
+//import RegExp from 'regexpp';
 
 
 function SignIn() {
@@ -47,7 +47,7 @@ function SignIn() {
   // const pwdHelperText = 'Should be at least 8 characters long having at least one uppercase letter, one lowercase letter, one number and one special character';
   const cPwdHelperText = 'Passwords doesn\'t match';
 
-  const pwdRegex = XRegExp('^((?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,})$')
+  const pwdRegex = RegExp('^((?=.[A-Za-z])(?=.\d)[A-Za-z\d]{8,})$')
   const login = async (event: any) => {
     event.preventDefault();
   }

@@ -41,7 +41,7 @@ function BasicInfo () {
         localStorage.setItem('access', data.data.access);
         localStorage.setItem('refresh', data.data.refresh);
         console.log(data);
-        navigate('/')
+        navigate('/f')
       });
   }
 
@@ -82,7 +82,7 @@ function BasicInfo () {
       
       <div id="BasicInfo__button">
         <Button variant='contained' className="BasicInfo__Skipbutton" >Skip </Button>
-        <Button variant='contained' className="BasicInfo__Continuebutton" > Continue </Button>
+        <Button variant='contained' className="BasicInfo__Continuebutton" ><a className="ButtonSingUptoBasicInfo" href="/f"> Continue</a> </Button>
       </div>
     </form>
        <div id="BasicInfo__Screen2">

@@ -25,6 +25,7 @@
     "react-google-button": "^0.7.2",
     "react-icons": "^4.7.1",
     "react-radio-group": "^3.0.3",
+    "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
     "react-simple-keyboard": "^3.5.27",

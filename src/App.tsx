@@ -9,6 +9,7 @@ import ForgetPassword from './components/ForgetPassword';
 import LogIn from './components/LogIn';
 import RMSnewArea from './components/RMSnewArea';
 import RMSNavbar from './components/RMSNavbar';
+import ModalResturant from './ModalResturant';
 
 
 
@@ -23,7 +24,9 @@ function App() {
     { path: '/rmstable', element: <RMSTable/> }, 
     { path: '/forgetpass', element: <ForgetPassword/> }, 
     { path: '/f', element: <RMSnewArea/>}, 
-    { path: '/p', element: <RMSNavbar/>},  
+    { path: '/p', element: <RMSNavbar/>}, 
+    { path: '/m', element: <ModalResturant/>},  
+
 
    ])
  
