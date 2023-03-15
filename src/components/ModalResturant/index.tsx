@@ -74,9 +74,9 @@ function ModalResturant() {
   };
   return (
     <form onSubmit={modalResturant}>
-      <Button className='newAreabutton__color' variant="outlined" onClick={handleClickOpen}>
+      <div className='newAreabutton__color' onClick={handleClickOpen}>
         Add New Resturant
-      </Button>
+      </div>
       <Dialog
         open={open}
         onClose={handleClose}
